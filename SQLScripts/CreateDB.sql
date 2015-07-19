@@ -1,0 +1,11 @@
+SET NOCOUNT ON;
+
+CREATE DATABASE InvestmentPortfolio;
+GO
+
+CREATE TABLE InvestmentPortfolio.dbo.Portfolios (
+  id INT IDENTITY,
+  name VARCHAR(100) NOT NULL,
+  CONSTRAINT PK_Portfolios PRIMARY KEY NONCLUSTERED (id)
+) ON [PRIMARY]
+GO
