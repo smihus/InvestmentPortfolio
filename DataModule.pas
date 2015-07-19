@@ -8,6 +8,9 @@ uses
 type
   Tdm = class(TDataModule)
     conMain: TADOConnection;
+    qPortfolios: TADOQuery;
+    dsPortfolios: TDataSource;
+    qPortfoliosname: TStringField;
   private
     { Private declarations }
   public
