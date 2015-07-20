@@ -11,6 +11,15 @@ type
     qPortfolios: TADOQuery;
     dsPortfolios: TDataSource;
     qPortfoliosname: TStringField;
+    qSymbols: TADOQuery;
+    dsSymbols: TDataSource;
+    qSymbolsticker: TStringField;
+    qSymbolsname: TStringField;
+    qSymbolTypes: TADOQuery;
+    dsSymbolTypes: TDataSource;
+    qSymbolTypesstype: TStringField;
+    qSymbolsstypelookup: TStringField;
+    qSymbolsstype: TStringField;
   private
     { Private declarations }
   public
