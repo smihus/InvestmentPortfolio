@@ -9,8 +9,12 @@ uses
 
 type
   TfmMain = class(TForm)
-    tcPortfolios: TTabControl;
     gdPortfolios: TDBGrid;
+    pcMain: TPageControl;
+    tsPortfolios: TTabSheet;
+    tsSymbols: TTabSheet;
+    gdSymbols: TDBGrid;
+    gdSymbolTypes: TDBGrid;
   private
     { Private declarations }
   public

@@ -15,32 +15,62 @@ object fmMain: TfmMain
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object tcPortfolios: TTabControl
+  object pcMain: TPageControl
     Left = 0
     Top = 0
     Width = 584
     Height = 362
+    ActivePage = tsSymbols
     Align = alClient
-    MultiLine = True
     TabOrder = 0
-    Tabs.Strings = (
-      #1055#1086#1088#1090#1092#1077#1083#1080)
-    TabIndex = 0
-    ExplicitWidth = 447
-    ExplicitHeight = 202
-    object gdPortfolios: TDBGrid
-      Left = 4
-      Top = 24
-      Width = 576
-      Height = 334
-      Align = alClient
-      DataSource = dm.dsPortfolios
-      TabOrder = 0
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
+    object tsPortfolios: TTabSheet
+      Caption = #1055#1086#1088#1090#1092#1077#1083#1080
+      object gdPortfolios: TDBGrid
+        Left = 0
+        Top = 0
+        Width = 576
+        Height = 334
+        Align = alClient
+        DataSource = dm.dsPortfolios
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+    end
+    object tsSymbols: TTabSheet
+      Caption = #1048#1085#1089#1090#1088#1091#1084#1077#1085#1090#1099
+      ImageIndex = 1
+      object gdSymbols: TDBGrid
+        Left = 0
+        Top = 0
+        Width = 576
+        Height = 193
+        Align = alTop
+        DataSource = dm.dsSymbols
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object gdSymbolTypes: TDBGrid
+        Left = 0
+        Top = 193
+        Width = 576
+        Height = 141
+        Align = alClient
+        DataSource = dm.dsSymbolTypes
+        TabOrder = 1
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
     end
   end
 end
